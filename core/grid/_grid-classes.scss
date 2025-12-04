@@ -51,7 +51,8 @@
     
   }
   @else {
-    margin-#{$direction}: flex-gutter($container-columns);
+    $direction: get-direction($layout-direction, $default-layout-direction);
+    margin-#{$direction}: flex-gutter($grid-columns);
     &:last-child {
       margin-#{$direction}: 0;
     }
@@ -105,7 +106,7 @@
 }
 
 @mixin breakpoint($media) {
-  @if      $media == small            { @include media($small-up) { @content; } }
+  @if      $media == small            { @include media($small) { @content; } }
 
   @else if $media == medium           { @include media($medium-up) { @content; } }
 
