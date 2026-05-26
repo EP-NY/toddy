@@ -1,5 +1,5 @@
 {
-  "name": "toddy",
+  "name": "@ep-ny/toddy",
   "version": "1.0.6",
   "description": "A lightweight, semantic grid framework with fixed gutters, based on Neat (the lightweight, semantic grid framework built with Bourbon)",
   "keywords": [
@@ -24,18 +24,15 @@
     "name": "Extended Play",
     "url": "http://extendedplay.nyc"
   },
-  "main": "core/_toddy.scss",
   "sass": "core/_toddy.scss",
-  "style": "core/_toddy.scss",
   "files": [
     "core",
-    "AGENTS.md",
     "LICENSE.md",
     "README.md"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/EP-NY/toddy.git"
+    "url": "git+https://github.com/EP-NY/toddy.git"
   },
   "scripts": {
     "test": "echo \"No test specified\""

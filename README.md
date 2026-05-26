@@ -5,12 +5,12 @@
 
 via npm:
 ```sh
-$ npm install toddy
+$ npm install @ep-ny/toddy
 ```
 
 via Yarn:
 ```sh
-$ yarn add toddy
+$ yarn add @ep-ny/toddy
 ```
 
 via Bower:
@@ -18,12 +18,26 @@ via Bower:
 $ bower install toddy
 ```
 
-After installing via npm/Yarn, import Toddy into your Sass:
+###### Importing from npm
+
+How you import after `npm install` depends on your Sass toolchain:
+
+**Webpack (`sass-loader`) / Vite / other bundlers that read the `sass` package.json field:**
 ```scss
-@import "toddy/core/toddy";
+@import "@ep-ny/toddy";
 ```
 
-Most Sass build tools (Webpack `sass-loader`, Dart Sass, `node-sass`, Vite, etc.) will resolve this path automatically from `node_modules`. If your toolchain doesn't search `node_modules` by default, add it to your Sass `includePaths`/`loadPaths` (e.g. `['node_modules']`) and the import above will work.
+**Dart Sass CLI or programmatic API:** add `node_modules` to your load paths and import the full path. From the CLI:
+```sh
+$ sass --load-path=node_modules src/app.scss out.css
+```
+```scss
+@import "@ep-ny/toddy/core/toddy";
+```
+
+In the JS API, pass `loadPaths: ['node_modules']` (Dart Sass) or `includePaths: ['node_modules']` (legacy `node-sass`).
+
+**Note:** `node-sass` (LibSass) reached end-of-life in 2022 — new projects should use the `sass` package (Dart Sass) instead.
 
 ---
 ###### Dependencies
