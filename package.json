@@ -36,5 +36,8 @@
   },
   "scripts": {
     "test": "echo \"No test specified\""
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
