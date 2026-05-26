@@ -1,6 +1,6 @@
 {
   "name": "@ep-ny/toddy",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A lightweight, semantic grid framework with fixed gutters, based on Neat (the lightweight, semantic grid framework built with Bourbon)",
   "keywords": [
     "flexbox",
