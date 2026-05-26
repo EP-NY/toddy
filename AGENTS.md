@@ -91,12 +91,30 @@ Toddy also supports Neat's semantic grid functions:
 ## Usage Patterns
 
 ### Installation
+
+Install via npm (or Yarn):
+```bash
+npm install @ep-ny/toddy
+```
+
 Install via Bower:
 ```bash
 bower install toddy
 ```
 
 ### Basic Import
+
+With bundlers that read the `sass` package.json field (Webpack `sass-loader`, Vite):
+```scss
+@import "@ep-ny/toddy";
+```
+
+With Dart Sass CLI / programmatic API (requires `node_modules` on the load path):
+```scss
+@import "@ep-ny/toddy/core/toddy";
+```
+
+For Bower or local copies, use the relative path:
 ```scss
 @import "path/to/toddy/core/toddy";
 ```
@@ -179,5 +197,5 @@ MIT License - See LICENSE.md
 ## Repository
 
 - GitHub: https://github.com/EP-NY/toddy
-- Homepage: http://neat.bourbon.io (original Neat documentation)
+- Upstream Neat documentation: http://neat.bourbon.io
 
