@@ -7,6 +7,10 @@ on:
     paths:
       - 'package.json'
 
+permissions:
+  contents: write  # needed to push git tags
+  id-token: write  # needed for npm trusted publishing (OIDC)
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -43,6 +47,4 @@ jobs:
 
       - name: Publish to npm
         if: steps.version.outputs.changed == 'true'
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish --provenance
