@@ -1,0 +1,15 @@
+.DS_store
+.sass-cache
+.scss-lint.yml
+.gitignore
+bower.json
+*.gem
+*.swp
+Gemfile
+Gemfile.lock
+node_modules
+bower_components
+public
+tmp
+test
+tests

@@ -3,10 +3,27 @@
 ---
 ###### Installation
 
+via npm:
+```sh
+$ npm install toddy
+```
+
+via Yarn:
+```sh
+$ yarn add toddy
+```
+
 via Bower:
 ```sh
 $ bower install toddy
 ```
+
+After installing via npm/Yarn, import Toddy into your Sass:
+```scss
+@import "toddy/core/toddy";
+```
+
+Most Sass build tools (Webpack `sass-loader`, Dart Sass, `node-sass`, Vite, etc.) will resolve this path automatically from `node_modules`. If your toolchain doesn't search `node_modules` by default, add it to your Sass `includePaths`/`loadPaths` (e.g. `['node_modules']`) and the import above will work.
 
 ---
 ###### Dependencies

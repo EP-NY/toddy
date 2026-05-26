@@ -15,7 +15,7 @@
     "scss",
     "semantic"
   ],
-  "homepage": "http://neat.bourbon.io",
+  "homepage": "https://github.com/EP-NY/toddy",
   "bugs": {
     "url": "https://github.com/EP-NY/toddy/issues"
   },
@@ -25,6 +25,14 @@
     "url": "http://extendedplay.nyc"
   },
   "main": "core/_toddy.scss",
+  "sass": "core/_toddy.scss",
+  "style": "core/_toddy.scss",
+  "files": [
+    "core",
+    "AGENTS.md",
+    "LICENSE.md",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/EP-NY/toddy.git"
